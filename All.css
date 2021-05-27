@@ -3,6 +3,21 @@
     font-family: 'Raleway', sans-serif;
 }
 
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: .5s;
+}
+
 .container {
     width: 90%;
     margin: auto;
@@ -181,129 +196,31 @@ nav {
 }
 
 
-/* ......................................Slider portion.............................................. */
-
-.slider {
-    width: 422px;
-    height: 350px;
-    background-color: aquamarine;
-    margin: auto;
-    margin: 30px 0;
-    z-index: -10 !important;
-}
-
-
-/* ...........................................Items list......................................................... */
-
-.vegetables {
-    background-color: #fffbdf;
-    padding: 15px 0;
-}
-
-.content {
-    width: 90%;
-    margin: auto;
-}
-
-.veggie_box {
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
-}
-
-.product_box {
-    float: left;
-    border: 5px solid #fffbdf;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.product_box h2 {
-    font-size: 25px;
-    font-weight: 500;
-    color: #007965;
-    display: inline-block;
-}
-
-.product_box span {
-    float: right;
-}
-
-.product_box button {
-    padding: 10px;
-    border-radius: 25px 25px;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    color: #f58634;
-    transition: .3s;
-}
-
-.product_box button:hover {
-    background-color: #ffcd2971;
-}
-
-.img_bx {
-    width: 100%;
-    height: 80%;
-    border-radius: 15px;
-    overflow: hidden;
-    margin-bottom: 10px;
-}
-
-.product_box img {
-    width: 100%;
-    height: 100%;
-    transition: 1s;
-}
-
-.product_box img:hover {
-    transform: scale(1.2);
-}
-
-.content h3 {
-    font-size: 25px;
-    color: #292929;
-    text-align: center;
-    margin: 20px 0;
-}
-
-
-/* ............................................Advertisement................................................... */
-
-.Advertise {
-    padding: 5px 0;
-}
-
-.Add_content {
-    width: 90%;
-    /* height: 500px; */
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-}
-
-.addv_img {
-    width: 100%;
-    /* height: 50%; */
-}
-
-.Add_content img {
-    width: 100%;
-    /* height: 100%; */
-}
-
-
 /* ........................................offers page................................................ */
 
 .offers {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    background-color: #fffbdf;
+    padding: 50px;
+    box-sizing: border-box;
 }
 
 .offers h3 {
-    font-size: 25px;
-    color: #292929;
+    font-size: 35px;
+    color: #007965;
+    text-align: center;
+    font-family: 'Bangers', cursive;
     margin: 20px 0;
+}
+
+.offers h4 {
+    font-size: 20px;
+    color: #4b2c16;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 0;
+    font-weight: 500;
 }
 
 .offers_container {
@@ -312,22 +229,22 @@ nav {
     margin: auto;
     /* background-color: violet; */
     display: grid;
-    grid-template-columns: repeat(4, 25%);
+    grid-template-columns: repeat(5, 20%);
 }
 
 .offer_box {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 96%;
     border: 1px solid rgba(128, 128, 128, 0.644);
+    border-radius: 5px;
     box-sizing: border-box;
-    /* background-color: turquoise; */
     overflow: hidden;
     position: relative;
 }
 
 .img_content {
     width: 100%;
-    height: 75%;
+    height: 65%;
     overflow: hidden;
 }
 
@@ -343,15 +260,15 @@ nav {
 
 .Pricing_text {
     width: 100%;
-    height: 30%;
+    height: 35%;
     /* background-color: greenyellow; */
 }
 
 .Pricing_text p {
-    font-size: 18px;
+    font-size: 15px;
     text-align: center;
     font-weight: 600;
-    padding: 20px 0 0 0;
+    padding: 15px 0 0 0;
 }
 
 .Plus {
@@ -364,8 +281,8 @@ nav {
     padding-top: 10px;
     background-color: #f58634;
     position: absolute;
-    top: 62%;
-    left: 40%;
+    top: 50%;
+    left: 35%;
     display: none;
 }
 
@@ -379,9 +296,167 @@ nav {
 }
 
 
-/* ...............................................Responsive............................................. */
+/*--------------------------------------Footer--------------------------------------*/
+
+.fot {
+    display: grid;
+    justify-content: end;
+    align-content: end;
+    min-height: 60vh;
+    font-family: 'Poppins', sans-serif;
+    /* background-color: brown; */
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 50px;
+    box-sizing: border-box;
+    background: url('https://jayshah1234.github.io/E-vegetable/images/footer.jpg');
+    background-size: cover;
+    /* background-color: aquamarine; */
+}
+
+footer .foot {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .foot .sec2 h2 {
+    position: relative;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .foot .sec2 h2::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #ffcc29;
+}
+
+footer .foot .sec2 p {
+    color: white;
+}
+
+.sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+}
+
+.sci li {
+    list-style-type: none;
+}
+
+.sci li a {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background-color: #007965;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.sci li a:hover .fab {
+    color: #ffcc29;
+}
+
+.sci li a .fab {
+    color: white;
+    font-size: 20px;
+}
+
+.quicklinks {
+    position: relative;
+}
+
+.quicklinks li {
+    list-style-type: none;
+}
+
+.quicklinks li a {
+    color: #f7f7f7;
+    text-decoration: none;
+    margin: 0 0 10px -40px;
+    display: inline-block;
+}
+
+.quicklinks li a:hover {
+    color: #ffcc29;
+}
+
+.info {
+    position: relative;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+.info li span:nth-child(1) {
+    color: white;
+    font-size: 20px;
+}
+
+.info li span {
+    color: white;
+}
+
+.info a {
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+.info a:hover {
+    color: #ffcc29;
+}
+
+.copy {
+    width: 100%;
+    background: url('https://jayshah1234.github.io/E-vegetable/images/footer.jpg');
+    border-top: 1px solid white;
+    padding: 20px 0px;
+    text-align: center;
+    color: white;
+}
+
+@media(max-width: 991px) {
+    footer {
+        padding: 40px;
+    }
+    footer .foot {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .copy {
+        padding: 20px 0px;
+    }
+}
+
+@media(max-width: 768px) {
+    footer .foot {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+/* ........................................Responsive................................................ */
 
 @media only screen and (max-width:426px) {
+    /* ............................................nav........................................................     */
     .Main_nav {
         display: grid;
     }
@@ -454,19 +529,19 @@ nav {
         margin-left: 13%;
         float: left;
     }
-    /* ...................................veggie_box....................................... */
-    .veggie_box {
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
-    }
-    /* ........................................Advertisement................................ */
-    .Add_content {
-        grid-template-columns: repeat(1, 100%);
-    }
     /* ......................................offers part............................................... */
     .offers_container {
         display: grid;
         grid-template-columns: repeat(1, 100%);
+    }
+    .offer_box {
+        width: 100%;
+        height: 95%;
+        margin: auto;
+    }
+    .Plus {
+        top: 52%;
+        left: 40%;
     }
     /* .................................hamburger.................................... */
     .product_menu {
