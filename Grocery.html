@@ -6,58 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Grocery.css">
+    <link rel="icon" href="img/food-icon-background-png-favpng-CCytN9ydqACJ50nmVqWxiBacF-removebg-preview.png">
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" />
 
-    <title>Grocery</title>
+    <title>Grocer ↦ Grocery</title>
 </head>
 
 <body>
 
-    <nav>
-        <div class="Main_nav">
-            <div class="Left_nav">
-                <img src="https://res.cloudinary.com/dagcqvgd1/image/upload/v1619783862/extra/vegetables_upvlif.png">
-            </div>
-            <div class="middle_nav">
-                <div class="search_bar">
+    <section class="product_menu">
+        <h1>Grocer</h1>
 
-                    <div class="dropdown">
-                        <button id="btn4" onclick="mymenu()">
-                                Vadodara <i class="fas fa-angle-down" id="Icon"></i>
-                        </button>
-                        <div id="myDropdown" class="dropdown-content">
-                            <a href="#">Surat</a>
-                            <a href="#">Ahmedabad</a>
-                            <a href="#">Rajkot</a>
-                        </div>
-                    </div>
-
-                    <div class="search">
-                        <input type="text" placeholder="Search products on your city">
-                        <button> <i class="fas fa-search"></i></button>
-                    </div>
-                </div>
-            </div>
-            <div class="right_nav">
-                <div class="cart_bar">
-                    <dir class="login">
-                        <a href="#"> <i class="fas fa-user-circle"></i><span> Login</span></a>
-                    </dir>
-                    <div class="cart">
-                        <a href="#"> <i class="fas fa-shopping-cart"></i><span> My Cart</span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- ............................Simple menu.................................. -->
-
-        <div class="product_menu">
+        <div class="option_bar">
             <ul>
                 <li>
                     <a href="index.html">Home</a>
@@ -84,6 +52,13 @@
 
             </ul>
         </div>
+
+    </section>
+
+    <nav>
+        <!-- ............................Simple menu.................................. -->
+
+
         <!-- ......................hamburger.......................................... -->
         <div id="menuArea">
             <input type="checkbox" id="menuToggle"></input>
@@ -113,9 +88,98 @@
         </div>
         <!-- ................................................ -->
 
+        <div class="search_content">
+            <div class="searchbox">
+                <form>
+                    <select>
+                        <option>Vadodara</option>
+                        <option>Ahemdabad</option>
+                        <option>Surat</option>
+                        <option>Rajkot</option>
+
+                    </select>
+                    <div class="inputbox">
+                        <input type="text" placeholder="Search Your Product..">
+                        <div class="searchicon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="cart_bar">
+                <div class="login">
+                    <a href="#"> <i class="fas fa-user-circle"></i><span> Login</span></a>
+                </div>
+                <div class="cart">
+                    <a href="#"> <i class="fas fa-shopping-cart"></i><span> My Cart</span></a>
+                </div>
+            </div>
+        </div>
+
+
     </nav>
 
 
+    <section class="category_slider">
+
+
+        <div class="logo-slider1">
+            <div class="slide1">
+                <a href="Vegetables.html"> <img src="https://webcdn.grofers.com/cdn/pdp/category-l0-1487.jpg" alt="">
+                    <p>Fresh Vegetables</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="Grocery.html"><img src="https://webcdn.grofers.com/cdn/pdp/category-l0-16.jpg" alt="">
+                    <p>Grocery</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="All_item.html"> <img src="https://webcdn.grofers.com/cdn/pdp/category-l0-163.jpg" alt="">
+                    <p>Personal Care</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="All_item.html"> <img src="https://cdn.grofers.com/app/images/products/sliding_image/314a.jpg?ts=1603181364" alt="">
+                    <p>Beverages</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="Fruits.html"> <img src="https://cdn.grofers.com/app/images/products/sliding_image/274987a.jpg?ts=1610740381" alt="">
+                    <p>Fruits</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="All_item.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4huawduTQHNgO7KwEHT6JKRzgf-IxNn20Yw&usqp=CAU" alt="">
+                    <p>Bakery items</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="All_item.html"><img src="https://cdn.grofers.com/app/images/products/sliding_image/457206a.jpg" alt="">
+                    <p>Best Deals</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="All_item.html"><img src="https://cdn.grofers.com/app/images/products/sliding_image/377560a.jpg?ts=1620894635" alt="">
+                    <p>House Hold items</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="All_item.html"><img src="https://cdn.grofers.com/app/images/products/sliding_image/400232a.jpg?ts=1592545561" alt="">
+                    <p>Lowest Prices</p>
+                </a>
+            </div>
+            <div class="slide1">
+                <a href="All_item.html"><img src="https://cdn.grofers.com/app/images/products/sliding_image/428970a.jpg?ts=1617638215" alt="">
+                    <p>Kitchen & Dining</p>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- .....................................offers part........................................... -->
 
     <section class="offers">
 
@@ -131,15 +195,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p>Pista</p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg001',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg001_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg001_store">12</span></span>
+                            <span style="display:none" id="veg001_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="offer_box">
@@ -151,15 +222,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p>Dry Fruits Package </p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg002',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg002_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg002_store">12</span></span>
+                            <span style="display:none" id="veg002_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="offer_box">
@@ -171,15 +249,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p>Tata Salt Lite</p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg003',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg003_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg003_store">12</span></span>
+                            <span style="display:none" id="veg003_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="offer_box">
@@ -191,15 +276,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p>Masala</p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg004',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg004_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg004_store">12</span></span>
+                            <span style="display:none" id="veg004_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="offer_box">
@@ -211,15 +303,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p> Groundnut Oil </p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg005',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg005_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg005_store">12</span></span>
+                            <span style="display:none" id="veg005_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -234,15 +333,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p> Disinfectant Surface </p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg006',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg006_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg006_store">12</span></span>
+                            <span style="display:none" id="veg006_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="offer_box">
@@ -254,15 +360,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p>Body Soap </p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg007',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg007_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg007_store">12</span></span>
+                            <span style="display:none" id="veg007_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="offer_box">
@@ -274,15 +387,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p> Tomato Ketchup </p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg008',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg008_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg008_store">12</span></span>
+                            <span style="display:none" id="veg008_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="offer_box">
@@ -294,15 +414,22 @@
                         <i class="fas fa-plus"></i>
                     </div>
                     <p>Maggie Jumbo Pack</p>
-                    <p> <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </p>
-                    <p>
-                        $ 202.00
-                    </p>
+                    <div class="quantity_Box">
+                        <div class="quantity">
+
+                            <select onchange="product_options('veg009',this.value)">
+                                <option value="0.25_20_12">250 gm</option>
+                                <option value="0.5_40_20">500 gm</option>
+                                <option value="1_70_40">1 kg</option>
+                                <option value="2_100_80">2 kg</option>
+                    	</select>
+
+                            <span style="margin-left: 10px;"><del>₹ <span id="veg009_market" >20</span></del>
+                            </span>
+                            <span style="margin-left: 10px;">₹ <span id="veg009_store">12</span></span>
+                            <span style="display:none" id="veg009_weight">0.25</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -406,6 +533,10 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous"></script>
+    <script src="item_slide.js"></script>
 </body>
 
 </html>
